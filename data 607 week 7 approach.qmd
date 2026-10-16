@@ -1,0 +1,33 @@
+---
+title: "Working with HTML and JSON: Approach Deliverable"
+author: "Chanice McKenzie"
+format:
+  html:
+    toc: true
+    theme: cosmo
+    number-sections: true
+---
+
+# Introduction - Planned approach
+
+For this assignment, I plan to explore how the same information can be stored in HTML and JSON and then imported into R. I will use three books on the subject of data science and statistics. This topic connects to my coursework and provides an opportunity to practice organizing a small dataset before working with larger files from websites and APIs.
+
+I will select three published books related to data science, statistics, or data analysis, making sure at least one has multiple authors. For each book, I will record its title, all authors, publication year, publisher, and ISBN. I will verify the bibliographic details using publisher or catalog information before creating the files.
+
+I will use the same three books, the same field names, and the same values in both formats. For books with multiple authors, I plan to keep the authors together in a consistently ordered, semicolon-separated text field. This will make it easier to compare the imported tables, while still preserving each author's name.
+
+Once both files are available, I plan to use `rvest` to read the HTML table into an R data frame and `jsonlite` to read the JSON records into a separate data frame. I will use `dplyr` as needed to select and arrange columns consistently and standardize text fields and data types.
+
+I will inspect the column names, dimensions, and sample records from both imported data frames. Then I will compare their structures and values using an appropriate R comparison function, such as `identical()` after standardizing the column order and types. If they do not match, I will examine the differences and trace them back to the source files or import process rather than assuming the files are equivalent.
+
+# Anticipated Data Challenges
+
+The first challenge will be representing multiple authors consistently. JSON can naturally store an array of author names, while a basic HTML table cell usually contains text. To keep the comparison straightforward, I will use the same semicolon-separated representation in both source files and document that choice.
+
+A second challenge will be data types. Publication years may be read as numbers in one format but as text in the other, and ISBNs should remain character strings because they are identifiers rather than quantities. I will explicitly check and align types before comparing the data frames.
+
+A third challenge will be differences in spacing, punctuation, special characters, or column order. Small inconsistencies can cause a comparison to fail even when the records appear similar. I will preserve consistent values during manual entry and document any cleaning needed after import.
+
+# Expected Outcome and Next Steps
+
+My goal is to produce two equivalent data frames from two different source formats and clearly report whether they are identical after any documented standardization. 
