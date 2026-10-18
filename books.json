@@ -1,0 +1,23 @@
+[
+  {
+    "title": "R for Data Science (2nd Edition)",
+    "authors": "Hadley Wickham; Mine Çetinkaya-Rundel; Garrett Grolemund",
+    "publication_year": 2023,
+    "publisher": "O’Reilly Media",
+    "isbn": "9781492097402"
+  },
+  {
+    "title": "Python for Data Analysis (3rd Edition)",
+    "authors": "Wes McKinney",
+    "publication_year": 2022,
+    "publisher": "O’Reilly Media",
+    "isbn": "9781098104030"
+  },
+  {
+    "title": "Practical Statistics for Data Scientists (2nd Edition)",
+    "authors": "Peter Bruce; Andrew Bruce; Peter Gedeck",
+    "publication_year": 2020,
+    "publisher": "O’Reilly Media",
+    "isbn": "9781492072942"
+  }
+]
